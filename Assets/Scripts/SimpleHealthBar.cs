@@ -8,11 +8,20 @@ public class SimpleHealthBar : HealthBar
     private void Start()
     {
         _slider.maxValue = Health.MaxValue;
-        _slider.value = Health.CurrentValue;
+        ChangeValue(Health.CurrentValue);
     }
 
     public override void ChangeValue(float value)
     {
-        _slider.value = value;
+        _slider.value = CalculateNormalizedValue(value);
+    }
+
+    private float CalculateNormalizedValue(float absoluteValue)
+    {
+        if (Health.MaxValue <= 0)
+            return 0f;
+
+        float clampedValue = Mathf.Clamp(absoluteValue, 0, Health.MaxValue);
+        return clampedValue / Health.MaxValue;
     }
 }

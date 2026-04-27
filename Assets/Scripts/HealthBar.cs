@@ -14,8 +14,5 @@ public abstract class HealthBar : MonoBehaviour
         Health.ChangedValue -= ChangeValue;
     }
 
-    public virtual void ChangeValue(float value)
-    {
-
-    }
+    public abstract void ChangeValue(float value);
 }
