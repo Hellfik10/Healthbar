@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SmoothHealthBar
   Health: {fileID: 0}
-  _slider: {fileID: 4038705645419007810}
+  HealthSlider: {fileID: 4038705645419007810}
   _delay: 50
 --- !u!1 &3752421842204437754
 GameObject:

@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SimpleHealthBar
   Health: {fileID: 0}
-  _slider: {fileID: 4290683029444785339}
+  HealthSlider: {fileID: 4290683029444785339}
 --- !u!1 &3570130944162613853
 GameObject:
   m_ObjectHideFlags: 0
